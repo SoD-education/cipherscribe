@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>CipherScribe</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div>
+          <h1>CipherScribe</h1>
+        </div>
+        <div>Thanks for visiting!</div>
+      </nav>
+      <section>
+        <h2>Text to convert</h2>
+        <p>
+          Welcome to CipherScribe! This tool can be used to encrypt a message.
+          It's not a sophisticated tool, but it gets a job done.
+        </p>
+        <ol>
+          <li>Type or copy&paste the message in the box below</li>
+          <li>Click the ENCRYPT / DECRYPT button</li>
+          <li>
+            The encrypted message will appear in the blue box. Click the COPY
+            button to save the text to your clipboard.
+          </li>
+        </ol>
+        <div>
+          <textarea
+            id="inputText"
+            placeholder="Type your text here..."></textarea>
+        </div>
+        <button id="encryptButton">ENCRYPT / DECRYPT</button>
+        <h2>Result</h2>
+        <div class="output" id="outputText"></div>
+        <div class="copy-div">
+          <button id="copyButton" style="display: none">COPY</button>
+          <span id="copyNotification" style="visibility: hidden"></span>
+        </div>
+      </section>
+      <div class="spacer">&nbsp;</div>
+      <section>
+        <h2>History</h2>
+        <div id="history"></div>
+        <button id="clearHistoryButton">CLEAR HISTORY</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
